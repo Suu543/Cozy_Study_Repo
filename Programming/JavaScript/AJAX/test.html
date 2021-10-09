@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        /* 10px = 1rem */
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      li,
+      button,
+      label,
+      input,
+      p {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 4.8rem;
+      }
+
+      h3 {
+        font-size: 3rem;
+        font-weight: normal;
+      }
+
+      h4,
+      h5 {
+        font-size: 2.8rem;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      button {
+        padding: 2rem 6rem;
+        background-color: #4c6e97;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        border: none;
+        transition-property: background;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+      }
+
+      button:hover {
+        background-color: #27394e;
+      }
+
+      /* Nav Section */
+      .main-head {
+        background-color: #131c27;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        color: white;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        min-height: 10vh;
+        flex-wrap: wrap;
+        padding: 2rem;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        flex: 1 1 40rem;
+        justify-content: space-around;
+      }
+
+      #logo {
+        flex: 2 1 40rem;
+        font-family: "Pattaya", sans-serif;
+        font-weight: 400;
+      }
+
+      .hero {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+          url("./img/landing-page.jpg");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .hero h3 {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">Travelly</h1>
+        <ul>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Travel Beyond Limits</h2>
+        <h3>
+          Start your travel at an affordable price with Travelly <br />
+          Contact us now bellow.
+        </h3>
+        <button>Book Now</button>
+      </section>
+    </main>
+  </body>
+</html>
