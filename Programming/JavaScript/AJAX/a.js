@@ -1,4 +1,4 @@
-dummy_data = [
+let dummy_data = [
   {
     name: {
       first: "Laurence",
